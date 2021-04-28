@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Every_Position_Must_Have_Hiring_Mgr</fullName>
+    <active>true</active>
+    <description>Every position record must have a hiring manager.</description>
+    <errorConditionFormula>IF(ISBLANK( Hiring_Manager__c ) &amp;&amp;  ISPICKVAL(Status__c, &apos;Open&apos;), true, false)</errorConditionFormula>
+    <errorDisplayField>Hiring_Manager__c</errorDisplayField>
+    <errorMessage>Every Open Position must have a Hiring Manager.</errorMessage>
+</ValidationRule>
