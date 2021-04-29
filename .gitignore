@@ -18,6 +18,14 @@ package.json
 readme.md 
 sfdx-project.json
 
+# Undesired Customizations
+force-app/main/default/objects/
+force-app/main/default/staticresources/
+force-app/main/default/tabs/
+force-app/main/default/applications/
+force-app/main/default/contentassets/
+force-app/main/default/permissionsets/
+
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
 
