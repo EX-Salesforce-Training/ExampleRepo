@@ -21,7 +21,7 @@ public with sharing class ExampleFutureMethod {
         FutureExample();
         system.debug([SELECT name FROM PermissionSet WHERE name = 'ExampleSet']);
         Account a = new Account(name='Bob\'s Account');
-        insert bob;
+        insert a;
         List<PermissionSet> permList = [SELECT name FROM PermissionSet WHERE name = 'ExampleSet'];
         List<Account> aList = [SELECT name FROM Account WHERE name = 'Bob\'s Account'];
         system.debug(permList + ' ' + aList);

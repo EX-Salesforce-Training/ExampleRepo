@@ -3,7 +3,11 @@ private class ExampleSOAPCalloutTest {
   @isTest
   static void testSOAPCallout(){
     Test.setMock(WebServiceMock.class, new ExampleSOAPServiceMock());
-    // call method that performs callout
-    // assert that the response from the mock callout is 'This is an example'
+
+    ExampleApexCodeFromWSDL.ExampleSOAPService bobsSOAP = new ExampleApexCodeFromWSDL.ExampleSOAPService();
+    
+    String bobResult = bobsSoap.createAccount('Bob');
+    
+    system.assertEquals('This is an example',bobresult);
   }
 }

@@ -1,6 +1,8 @@
 // Rest resources must be global, and have the @RestResource annotation. 
 // The annotation is followed by the URL mapping, basically where any 
 // requests need to be sent. We define this here.
+// In this case the actual endpoint for a request would go to 
+// http://yoursalesforceinstance.com/services/apexrest/contact/
 @RestResource(urlMapping='/Contact/*')
 global class ExampleRESTService {
     
@@ -17,6 +19,8 @@ global class ExampleRESTService {
         // We get the context
         RestRequest restReq = RestContext.request;
         // We get the id of the resource being requested
+        // In this case we are taking the URI, finding the last instance of
+        // '/' and saying we want everything that follows that.
         String contactId = restReq.requestURI.substring(restReq.requestURI.lastIndexOf('/')+1);
         // We use that id to query for the information we want to expose.
         // In this case we are exposing some basic details, 

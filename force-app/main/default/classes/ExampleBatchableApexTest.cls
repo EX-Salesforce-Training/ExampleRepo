@@ -9,7 +9,7 @@
 //
 ///////////////////////////////////////////////////////////////
 @isTest
-private class ApexBatchClassDemo {
+private class ExampleBatchableApexTest {
 	@isTest
     static void testAccBatch(){
         // when we test batch Apex, we can perform at most one call to the batch class execute() method
