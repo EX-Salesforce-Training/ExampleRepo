@@ -1,5 +1,17 @@
 ({
     myAction : function(component, event, helper) {
-        let msg = event.getParams("message");
+        try{
+            let msg = event.getParams("message");
+        }catch(error){
+            let toastEvent = $A.get("e.force:showToast");
+            toastEvent.setParams({
+                mode:'dismissible',
+                title: 'Error!',
+                message: error.message()
+            });
+            toastEvent.fire();
+        }finally{
+
+        }
     }
 })
