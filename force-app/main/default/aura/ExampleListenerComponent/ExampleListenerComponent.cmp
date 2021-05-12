@@ -1,0 +1,5 @@
+<aura:component>
+    <aura:handler name="ComponentEvent" event="c:ExampleComponentEvent" action="{!c.myAction}" />
+    <aura:handler event="c:ExampleApplicationEvent" action="{!c.myAction}" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+</aura:component>

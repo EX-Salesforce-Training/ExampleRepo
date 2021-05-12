@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId">
+    <aura:attribute name="acc" type="Account"/>
+    <force:recordData recordId="{!v.recordId}" targetFields="{!v.acc}" fields="Name,BillingState,Phone,BillingCountry,Industry"/>
+    <lightning:card>
+        <lightning:formattedText value="{!v.acc.Name}"/>
+    </lightning:card>
+</aura:component>

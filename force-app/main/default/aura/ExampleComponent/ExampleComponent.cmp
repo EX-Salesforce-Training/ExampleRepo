@@ -1,0 +1,4 @@
+<aura:component>
+    <aura:registerEvent name="ComponentEvent" type="c:ExampleComponentEvent"/>
+    <aura:registerEvent name="ApplicationEvent" type="c:ExampleApplicationEvent"/>
+</aura:component>

@@ -1,0 +1,10 @@
+<aura:component controller="AuraController" access="global" >
+    <aura:attribute name="Hello" type="String" default="Hello Internet!" />
+    <aura:attribute name="tralse" type="boolean" default="true"/>
+    <aura:if isTrue="{!v.tralse}">
+        <div>
+            <p>{!v.Hello}</p>
+        </div>
+    </aura:if>
+    <lightning:button label="On/Off" title="Show Or Not" onclick="{!c.Visible}" />
+</aura:component>
