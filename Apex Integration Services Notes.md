@@ -1,7 +1,5 @@
 # Module - Apex Integration Services
 
-[Longform](<./LFApex Integration Services.md>)
-
 ## External Data and Salesforce Connect
 
 Salesforce Connect
