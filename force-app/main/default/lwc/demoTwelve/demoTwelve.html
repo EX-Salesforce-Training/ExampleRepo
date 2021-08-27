@@ -1,0 +1,7 @@
+<template>
+    <div class="main">
+        <template for:each={accList.data} for:item="acc">
+            <div key={acc.Id} data-id="account">{acc.Name}</div>
+        </template>
+    </div>
+</template>

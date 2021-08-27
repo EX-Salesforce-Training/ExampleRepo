@@ -1,0 +1,14 @@
+<template>
+    <template if:true={myBool}>
+        Option 1<br/>
+        <template for:each={myArrayOne} for:item="con">
+            {con} ,
+        </template>
+    </template>
+    <template if:false={myBool}>
+        Option 2<br/>
+        <template for:each={myArrayTwo} for:item="con">
+            {con} ,
+        </template>
+    </template>
+</template>
